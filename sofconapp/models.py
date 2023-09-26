@@ -1,4 +1,5 @@
 from django.db import models
+# from ckeditor.fields import RichTextField
 
 ## Create your models here.
 class Students(models.Model):
@@ -26,6 +27,7 @@ class Course(models.Model):
     sno = models.AutoField(primary_key=True)
     cname = models.CharField(max_length=255)
     csummary = models.TextField()
+    # csummary = models.RichTextField()
     cimg = models.ImageField(upload_to='courseimages')
     heading = models.CharField(max_length=100)
     slug = models.SlugField(max_length=500)

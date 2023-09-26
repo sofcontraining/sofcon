@@ -8,4 +8,5 @@ urlpatterns = [
     path('courses',views.courses,name='courses'),
     path('students',views.students,name='students'),
     path('contact',views.contact,name='contact'),
+    path('<str:slug>',views.coursedetails,name='coursedetails'),
 ]
